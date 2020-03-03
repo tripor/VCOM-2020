@@ -37,7 +37,7 @@ for i in range(img.shape[0]):
 cv.imshow("noise",img)
 cv.waitKey(0)
 cv.destroyAllWindows()
-
+cv.imwrite("noise.jpg",img)
 
 img = cv.imread("./colours.png")
 b,r,g = cv.split(img)
